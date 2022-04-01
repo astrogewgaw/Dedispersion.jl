@@ -1,0 +1,7 @@
+name = "DeDisp"
+version = "0.0.1"
+uuid = "fc859fcf-df02-4415-b05f-e38a41bf0974"
+authors = ["Ujjwal Panda <ujjwalpanda97@gmail.com>"]
+
+[compat]
+julia = "1.7"
