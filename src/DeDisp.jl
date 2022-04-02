@@ -26,7 +26,7 @@ end
 
 function dditer!(X, I, ξ)
     for j ∈ 1:size(I, 2)
-        for i ∈ 1:size(X, 1)
+        Threads.@threads for i ∈ 1:size(X, 1)
             @inbounds X[i] += I[CartesianIndex(i + ξ[j], j)]
         end
     end
