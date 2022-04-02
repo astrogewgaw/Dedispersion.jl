@@ -1,10 +1,12 @@
 module DeDisp
 
+export 𝓓
+export Δt
 export Δξ
 export dd
 
-𝓓()::Float64 = 4.1488064239e3
-Δt(f₁, f₂, DM) = 𝓓() * DM * (1/f₁^2 - 1/f₂^2)
+const 𝓓 = 4.1488064239e3
+Δt(f₁, f₂, DM) = 𝓓 * DM * (1/f₁^2 - 1/f₂^2)
 
 function Δξ!(ξ, fₕ, Δf, nf, nt, δt, DM)
     δf = Δf / nf
