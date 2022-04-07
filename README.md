@@ -1,14 +1,18 @@
-<div align="center">
+<div align="left" style="font-family:juliamono">
+<h2>
+<i>
+<code>DeDisp</code> :
+<small><u>Dedispersion, implemented in Julia.</u></small>
+</i>
+</h2>
+<br/>
+<img src="https://img.shields.io/github/license/astrogewgaw/DeDisp.jl?style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/astrogewgaw/DeDisp.jl?style=for-the-badge"/>
+<a href="https://gitmoji.dev">
+<img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge"/>
+</a>
 
-# DeDisp
-
-![License][license]
-![GitHub Stars][stars]
-[![Gitmoji][gitmoji-badge]][gitmoji]
-
-## Dedispersion, implemented in Julia.
-
-</div>
+<br/><br/>
 
 <div align="justify">
 
@@ -23,10 +27,4 @@ It is hoped that package will be sufficiently tested before being released via
 the Julia packaging system for wider consumption.
 
 </div>
-
-
-[gitmoji]: https://gitmoji.dev
-[v0.0.3]: https://github.com/astrogewgaw/DeDisp.jl/releases/tag/v0.0.3
-[stars]: https://img.shields.io/github/stars/astrogewgaw/DeDisp.jl?style=for-the-badge
-[license]: https://img.shields.io/github/license/astrogewgaw/DeDisp.jl?style=for-the-badge
-[gitmoji-badge]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
+</div>
