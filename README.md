@@ -1,30 +1,45 @@
-<div align="left" style="font-family:juliamono">
-<h2>
-<i>
-<code>DeDisp</code> :
-<small><u>Dedispersion, implemented in Julia.</u></small>
-</i>
-</h2>
-<br/>
-<img src="https://img.shields.io/github/license/astrogewgaw/DeDisp.jl?style=for-the-badge"/>
-<img src="https://img.shields.io/github/stars/astrogewgaw/DeDisp.jl?style=for-the-badge"/>
-<a href="https://gitmoji.dev">
-<img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge"/>
-</a>
+<div style="font-family:JetBrainsMono Nerd Font">
 
-<br/><br/>
+# `DeDisp.jl`
+
+![Stars][stars-badge]
+![License][license-badge]
+[![Gitmoji][gitmoji-badge]][gitmoji]
+
+## DeDispersion, implemented in Julia.
 
 <div align="justify">
 
-This is a work-in-progress implementation of the dedispersion algorithm in
-Julia. It is meant to serve as a proof-of-concept, that will gradually mature
-into something that can be used in production. The hope is that this library can
-achieve C/C++ like speeds, but with readable, understandable, and extendible
-code. This package will be benchmarked for every release published on GitHub;
-the benchmarks can be checked out [**here**](bench/README.md). For all releases
-prior to the `v0.1.0` release, expect a high incidence of bugs and API changes.
-It is hoped that package will be sufficiently tested before being released via
-the Julia packaging system for wider consumption.
+This is a work-in-progress implementation of the dedispersion algorithm, used in
+time-domain radio astronomy, in [**Julia**][julia]. Dedispersion is often the
+main bottleneck in real-time search pipelines for pulsars and radio transients,
+and hence it is implemented in low-level languages, such as C, C++, FORTRAN, or
+CUDA (for GPUs). This package hopes to demonstrate that similar speeds, on both
+the CPU and the GPU, can be obtained with a high-level language as well. To
+drive this point home, I have benchmarked `DeDisp.jl` versus `prepsubband`,
+which is the CLI that implements dedispersion in `PRESTO`, one of the most used
+libraries in pulsar astronomy:
+
+
+<br/>
+<img
+    align="center"
+    src="bench/bench_plot.png"
+    alt="Speedup of DeDisp.jl over PRESTO"
+/>
+<br/><br/>
+
+For more details on how this benchmark was generated, have a look at the
+[**`bench/README.md`**](bench/README.md) file, which gives a detailed look into
+the entire process.
 
 </div>
+
 </div>
+
+[julia]: https://julialang.org
+[gitmoji]: https://gitmoji.dev
+[presto]: https://github.com/scottransom/presto
+[stars-badge]: https://img.shields.io/github/stars/astrogewgaw/DeDisp.jl?style=for-the-badge
+[license-badge]: https://img.shields.io/github/license/astrogewgaw/DeDisp.jl?style=for-the-badge
+[gitmoji-badge]: https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=for-the-badge
