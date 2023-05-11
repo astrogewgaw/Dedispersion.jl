@@ -1,4 +1,4 @@
-module DeDisp
+module Dedispersion
 
 const 𝓓 = 4.1488064239e3
 
