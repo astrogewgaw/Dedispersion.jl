@@ -1,7 +1,7 @@
 name = "Dedispersion"
+version = "0.0.1"
 uuid = "fc859fcf-df02-4415-b05f-e38a41bf0974"
 authors = ["Ujjwal Panda <ujjwalpanda97@gmail.com>"]
-version = "0.0.1"
 
 [deps]
 Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
@@ -11,3 +11,7 @@ RollingDedispersion = "de1a5888-936f-4c73-9525-49a60d2dc87e"
 
 [compat]
 julia = "1.9"
+Reexport = "1.2"
+FastDedispersion = "^0.0"
+DirectDedispersion = "^0.0"
+RollingDedispersion = "^0.0"
